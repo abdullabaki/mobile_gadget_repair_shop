@@ -4,6 +4,7 @@ import PhoneImg from "../../assets/Images/phone_repair.png";
 const Services = () => {
    return (
       <div classname="m-auto w-7xl">
+         <h2 className="text-4xl font-extrabold text-center mb-8 text-primary">Our Services</h2>
          <div className="grid grid-flow-col grid-rows-2 gap-6 justify-center items-center m-auto">
             <div className="card bg-base-100 w-80 shadow-sm">
                <figure>
