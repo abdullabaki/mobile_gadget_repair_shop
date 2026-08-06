@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <Services />
+            <Services classname="mx-20"/>
         </div>
     );
 };

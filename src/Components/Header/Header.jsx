@@ -27,12 +27,15 @@ const Header = () => {
                </ul>
             </nav>
             <div className="navbar-end">
-               <button className="btn btn-dash btn-primary mr-4">
-                  <Link to="/signin">Sign In</Link>
-               </button>
-               <button className="btn btn-dash btn-error">
-                  <Link to="/signup">Sign Up</Link>
-               </button>
+               <Link to="/signin">
+                  <button className="btn btn-dash btn-primary mr-4">
+                     Sign In
+                  </button>
+               </Link>
+
+               <Link to="/signup">
+                  <button className="btn btn-dash btn-error">Sign Up</button>
+               </Link>
             </div>
          </div>
       </div>
