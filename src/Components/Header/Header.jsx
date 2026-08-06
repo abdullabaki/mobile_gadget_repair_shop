@@ -1,4 +1,4 @@
-import "react";
+import { Link, NavLink } from "react-router";
 import Logo from "../../assets/Images//logo.png";
 
 const Header = () => {
@@ -13,37 +13,26 @@ const Header = () => {
             <nav>
                <ul className="flex gap-6 text-lg font-semibold align-middle m-auto">
                   <li>
-                     <a
-                        href="#home"
-                        className="hover:text-primary hover:border-b-3 border-primary scale-150 transform-gpu"
-                     >
-                        Home
-                     </a>
+                     <NavLink to="/">Home</NavLink>
                   </li>
                   <li>
-                     <a href="#about" className="hover:text-primary">
-                        About
-                     </a>
+                     <NavLink to="/">About</NavLink>
                   </li>
                   <li>
-                     <a href="#services" className="hover:text-primary">
-                        Services
-                     </a>
+                     <NavLink to="/">Services</NavLink>
                   </li>
                   <li>
-                     <a href="#contact" className="hover:text-primary">
-                        Contact
-                     </a>
+                     <NavLink to="/">Contact</NavLink>
                   </li>
                </ul>
             </nav>
             <div className="navbar-end">
-               <a href="#contact">
-                  <button className="btn btn-dash btn-primary mr-4">
-                     Login
-                  </button>
-                  <button className="btn btn-dash btn-error">Signup</button>
-               </a>
+               <button className="btn btn-dash btn-primary mr-4">
+                  <Link to="/signin">Sign In</Link>
+               </button>
+               <button className="btn btn-dash btn-error">
+                  <Link to="/signup">Sign Up</Link>
+               </button>
             </div>
          </div>
       </div>
