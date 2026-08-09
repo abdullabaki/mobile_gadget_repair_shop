@@ -4,10 +4,10 @@ import FooterLogo from "../../assets/Images/FooterLogo.png";
 const Footer = () => {
    return (
       <div className="mt-10 bg-neutral text-neutral-content">
-         <footer className="w-7xl m-auto footer sm:footer-horizontal p-10">
+         <footer className="w-7xl m-auto footer sm:footer-horizontal p-10 border-b border-b-[#5a6b85]">
             <aside>
                <img src={FooterLogo} alt="Footer Logo" className="h-20" />
-               <p className="w-87.5 font-semibold text-[17px] leading-6 pt-1.5">
+               <p className="w-87.5  text-[17px] leading-6 pt-1.5">
                   Your trusted mobile gadget & accessories repair booking
                   platform. Book certified technicians, track repairs, and
                   receive instant invoices.
@@ -43,10 +43,15 @@ const Footer = () => {
                <div className="font-font-normal flex flex-col gap-3 text-[18px]">
                   <a className="link link-hover">Phone: (123) 456-7890</a>
                   <a className="link link-hover">Email: info@repairshop.com</a>
-                  <a className="link link-hover">Address: 123 Repair St, City, State 12345</a>
+                  <a className="link link-hover">
+                     Address: 123 Repair St, City, State 12345
+                  </a>
                </div>
             </nav>
          </footer>
+         <p className="text-center py-3 text-[#94a3b8]">
+            © GadgetCare | All Rights Reserved.
+         </p>
       </div>
    );
 };

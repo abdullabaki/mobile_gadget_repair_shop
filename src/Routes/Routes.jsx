@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Signin from "../Pages/Signin/Signin";
 import Signup from "../Pages/Signup/Signup";
+import Services from "../Pages/Services/Services";
 
 export const router = createBrowserRouter([
    {
@@ -16,6 +17,11 @@ export const router = createBrowserRouter([
             index: true,
             path: "/",
             Component: Home,
+         },
+         {
+            index: true,
+            path: "/Services",
+            Component: Services,
          },
          {
             index: true,

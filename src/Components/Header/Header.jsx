@@ -2,8 +2,22 @@ import { Link, NavLink } from "react-router";
 import Logo from "../../assets/Images//logo.png";
 
 const Header = () => {
+   const menuItems = (
+      <>
+         <li>
+            <NavLink to="/">Home</NavLink>
+         </li>
+         <li>
+            <NavLink to="/Services">Services</NavLink>
+         </li>
+         <li>
+            <NavLink to="/contact">Contact</NavLink>
+         </li>
+      </>
+   );
+
    return (
-      <div className="bg-base-100 shadow-sm ">
+      <div className="bg-base-100 shadow-sm fixed w-full z-10">
          <div className="m-auto w-7xl navbar ">
             <div className="navbar-start">
                <NavLink to="/" className="logo">
@@ -12,18 +26,7 @@ const Header = () => {
             </div>
             <nav>
                <ul className="flex gap-6 text-lg font-semibold align-middle m-auto">
-                  <li>
-                     <NavLink to="/">Home</NavLink>
-                  </li>
-                  <li>
-                     <NavLink to="/about">About</NavLink>
-                  </li>
-                  <li>
-                     <NavLink to="/Services">Services</NavLink>
-                  </li>
-                  <li>
-                     <NavLink to="/contact">Contact</NavLink>
-                  </li>
+                  {menuItems}
                </ul>
             </nav>
             <div className="navbar-end">
