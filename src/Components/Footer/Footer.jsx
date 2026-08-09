@@ -1,12 +1,12 @@
 import "react";
-import FooterLogo from "../../assets/Images/logo.png";
+import FooterLogo from "../../assets/Images/FooterLogo.png";
 
 const Footer = () => {
    return (
-      <div className="text-base-content mt-10">
+      <div className="mt-10 bg-neutral text-neutral-content">
          <footer className="w-7xl m-auto footer sm:footer-horizontal p-10">
             <aside>
-               <img src={FooterLogo} alt="Footer Logo" className="h-24" />
+               <img src={FooterLogo} alt="Footer Logo" className="h-20" />
                <p className="w-87.5 font-semibold text-[17px] leading-6 pt-1.5">
                   Your trusted mobile gadget & accessories repair booking
                   platform. Book certified technicians, track repairs, and
@@ -14,7 +14,7 @@ const Footer = () => {
                </p>
             </aside>
             <nav className="pt-4">
-               <h6 className="text-primary text-[20px] font-black pb-3">
+               <h6 className="text-[20px] font-black pb-3 text-accent">
                   Quick Links
                </h6>
                <div className="font-font-normal flex flex-col gap-3 text-[18px]">
@@ -25,7 +25,7 @@ const Footer = () => {
                </div>
             </nav>
             <nav className="pt-4">
-               <h6 className="text-primary text-[20px] font-black pb-3">
+               <h6 className="text-accent text-[20px] font-black pb-3">
                   Services
                </h6>
                <div className="font-font-normal flex flex-col gap-3 text-[18px]">
@@ -37,7 +37,7 @@ const Footer = () => {
                </div>
             </nav>
             <nav className="pt-4">
-               <h6 className="text-primary text-[20px] font-black pb-3">
+               <h6 className="text-accent text-[20px] font-black pb-3">
                   Contact Us
                </h6>
                <div className="font-font-normal flex flex-col gap-3 text-[18px]">

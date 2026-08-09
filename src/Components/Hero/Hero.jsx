@@ -1,22 +1,22 @@
 import "react";
-import HeroImg from "../../assets/Images/hero_img.png";
 
 const Hero = () => {
    return (
-      <div>
-         <div className="hero min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-               <img
-                  src={HeroImg}
-                  className="max-w-sm rounded-lg shadow-2xl"
-               />
-               <div>
-                  <h1 className="text-5xl font-bold">Book Professional Technicians Instantly</h1>
-                  <p className="py-6">
-                     Register, book services, track jobs, chat with technicians, receive invoices and manage everything from one dashboard.
-                  </p>
-                  <button className="btn btn-primary">Book Service</button>
-               </div>
+      <div
+         className="hero h-190"
+         style={{
+            backgroundImage:
+               "url(https://images.pexels.com/photos/4432468/pexels-photo-4432468.jpeg)",
+         }}
+      >
+         <div className="hero-overlay"></div>
+         <div className="hero-content text-neutral-content text-center">
+            <div className="max-w-md">
+               <h1 className="mb-5 text-5xl font-bold">Book Professional Technicians</h1>
+               <p className="mb-5">
+                  Register, book services, track jobs, chat with technicians, receive invoices and manage everything from one dashboard.
+               </p>
+               <button className="btn btn-primary">Book Service</button>
             </div>
          </div>
       </div>
