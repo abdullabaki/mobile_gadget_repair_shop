@@ -1,4 +1,5 @@
 import "react";
+import { Link } from "react-router";
 
 const Hero = () => {
    return (
@@ -19,7 +20,9 @@ const Hero = () => {
                   Register, book services, track jobs, chat with technicians,
                   receive invoices and manage everything from one dashboard.
                </p>
-               <button className="btn btn-primary">Book Service</button>
+               <Link to="/Services">
+                  <button className="btn btn-primary">Book Service</button>
+               </Link>
             </div>
          </div>
       </div>

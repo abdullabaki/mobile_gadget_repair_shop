@@ -1,7 +1,52 @@
 import "react";
+import {
+   FaHeadphonesAlt,
+   FaLaptop,
+   FaMobileAlt,
+   FaPhoneAlt,
+} from "react-icons/fa";
+import { GiBattery50 } from "react-icons/gi";
+import { MdEmail, MdLocationOn, MdMobileScreenShare } from "react-icons/md";
+import { Link } from "react-router";
 import FooterLogo from "../../assets/Images/FooterLogo.png";
 
 const Footer = () => {
+   const Footer_content = [
+      {
+         id: 1,
+         title: "Quick Links",
+         items: ["Home", "About", "Services", "Contact"],
+      },
+      {
+         id: 2,
+         title: "Services",
+         icons: [
+            <FaMobileAlt />,
+            <FaLaptop />,
+            <FaHeadphonesAlt />,
+            <GiBattery50 />,
+            <MdMobileScreenShare />,
+         ],
+         items: [
+            "Mobile Repair",
+            "Laptop Repair",
+            "Accessories",
+            "Battery Replacement",
+            "Screen Replacement",
+         ],
+      },
+      {
+         id: 3,
+         title: "Contact Us",
+         icons: [<FaPhoneAlt />, <MdEmail />, <MdLocationOn />],
+         items: [
+            "123-456-7890",
+            "info@repairshop.com",
+            "123 Repair St, City, State 12345",
+         ],
+      },
+   ];
+
    return (
       <div className="mt-10 bg-neutral text-neutral-content">
          <footer className="w-7xl m-auto footer sm:footer-horizontal p-10 border-b border-b-[#5a6b85]">
@@ -13,7 +58,39 @@ const Footer = () => {
                   receive instant invoices.
                </p>
             </aside>
-            <nav className="pt-4">
+            {Footer_content?.map((column) => (
+               <div key={column.id}>
+                  <h6 className="text-[20px] font-black pb-3 text-accent">
+                     {column.title}
+                  </h6>
+                  <div className="font-font-normal flex flex-col gap-3 text-[18px]">
+                     {column.items.map((item, index) => (
+                        <Link
+                           key={index}
+                           to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, '')}`}
+                           className="flex items-center gap-2"
+                        >
+                           {column.icons &&
+                              column.icons[index] &&
+                              column.icons[index]}
+                           {item}
+                        </Link>
+                     ))}
+                  </div>
+               </div>
+            ))}
+         </footer>
+         <p className="text-center py-3 text-[#94a3b8]">
+            © GadgetCare | All Rights Reserved.
+         </p>
+      </div>
+   );
+};
+
+export default Footer;
+
+{
+   /* <nav className="pt-4">
                <h6 className="text-[20px] font-black pb-3 text-accent">
                   Quick Links
                </h6>
@@ -47,13 +124,5 @@ const Footer = () => {
                      Address: 123 Repair St, City, State 12345
                   </a>
                </div>
-            </nav>
-         </footer>
-         <p className="text-center py-3 text-[#94a3b8]">
-            © GadgetCare | All Rights Reserved.
-         </p>
-      </div>
-   );
-};
-
-export default Footer;
+            </nav> */
+}
