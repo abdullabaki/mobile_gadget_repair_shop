@@ -1,9 +1,13 @@
 import "react";
 import {
+   FaFacebookMessenger,
+   FaFacebookSquare,
    FaHeadphonesAlt,
+   FaInstagram,
    FaLaptop,
    FaMobileAlt,
    FaPhoneAlt,
+   FaWhatsapp,
 } from "react-icons/fa";
 import { GiBattery50 } from "react-icons/gi";
 import { MdEmail, MdLocationOn, MdMobileScreenShare } from "react-icons/md";
@@ -15,7 +19,7 @@ const Footer = () => {
       {
          id: 1,
          title: "Quick Links",
-         items: ["Home", "About", "Services", "Contact"],
+         items: ["Home", "About Us", "Services", "Contact"],
       },
       {
          id: 2,
@@ -44,6 +48,29 @@ const Footer = () => {
             "info@repairshop.com",
             "123 Repair St, City, State 12345",
          ],
+         items_links: [
+            "tel:123-456-7890",
+            "mailto:info@repairshop.com",
+            "https://maps.google.com/?q=123+Repair+St,+City,+State+12345"
+         ],
+         social_media: [
+            {
+               url: "https://www.facebook.com",
+               name: <FaFacebookSquare />,
+            },
+            {
+               url: "https://www.facebook.com/messages",
+               name: <FaFacebookMessenger />,
+            },
+            {
+               url: "https://www.instagram.com",
+               name: <FaInstagram />,
+            },
+            {
+               url: "https://web.whatsapp.com/",
+               name: <FaWhatsapp />,
+            },
+         ],
       },
    ];
 
@@ -64,19 +91,52 @@ const Footer = () => {
                      {column.title}
                   </h6>
                   <div className="font-font-normal flex flex-col gap-3 text-[18px]">
-                     {column.items.map((item, index) => (
-                        <Link
-                           key={index}
-                           to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, '')}`}
-                           className="flex items-center gap-2"
-                        >
-                           {column.icons &&
-                              column.icons[index] &&
-                              column.icons[index]}
-                           {item}
-                        </Link>
-                     ))}
+                     {column.items.map((item, index) => {
+                        if (column.title === "Contact Us") {
+                           return (
+                              <a
+                                 key={index}
+                                 href={column.items_links[index]}
+                                 target="_blank"
+                                 className="flex items-center gap-2 hover:text-primary transition-colors duration-300"
+                              >
+                                 {item}
+                              </a>
+                           );
+                        } else {
+                           return (
+                              <Link
+                                 key={index}
+                                 to={
+                                    item === "Home"
+                                       ? "/"
+                                       : `/${item.toLowerCase().replace(/\s+/g, "")}`
+                                 }
+                                 className="flex items-center gap-2 hover:text-primary transition-colors duration-300 hover:text-bold"
+                              >
+                                 {column.icons &&
+                                    column.icons[index] &&
+                                    column.icons[index]}
+                                 {item}
+                              </Link>
+                           );
+                        }
+                     })}
                   </div>
+                  {column.social_media && (
+                     <div className="flex gap-4 mt-4">
+                        {column.social_media.map((social, index) => (
+                           <a
+                              key={index}
+                              href={social.url}
+                              target="_blank"
+                              className="text-[25px] hover:text-primary transition-colors duration-300"
+                           >
+                              {social.name}
+                           </a>
+                        ))}
+                     </div>
+                  )}
                </div>
             ))}
          </footer>
@@ -88,41 +148,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-   /* <nav className="pt-4">
-               <h6 className="text-[20px] font-black pb-3 text-accent">
-                  Quick Links
-               </h6>
-               <div className="font-font-normal flex flex-col gap-3 text-[18px]">
-                  <a className="link link-hover">Home</a>
-                  <a className="link link-hover">About</a>
-                  <a className="link link-hover">Services</a>
-                  <a className="link link-hover">Contact</a>
-               </div>
-            </nav>
-            <nav className="pt-4">
-               <h6 className="text-accent text-[20px] font-black pb-3">
-                  Services
-               </h6>
-               <div className="font-font-normal flex flex-col gap-3 text-[18px]">
-                  <a className="link link-hover">Mobile Repair</a>
-                  <a className="link link-hover">Laptop Repair</a>
-                  <a className="link link-hover">Accessories</a>
-                  <a className="link link-hover">Battery Replacement</a>
-                  <a className="link link-hover">Screen Replacement</a>
-               </div>
-            </nav>
-            <nav className="pt-4">
-               <h6 className="text-accent text-[20px] font-black pb-3">
-                  Contact Us
-               </h6>
-               <div className="font-font-normal flex flex-col gap-3 text-[18px]">
-                  <a className="link link-hover">Phone: (123) 456-7890</a>
-                  <a className="link link-hover">Email: info@repairshop.com</a>
-                  <a className="link link-hover">
-                     Address: 123 Repair St, City, State 12345
-                  </a>
-               </div>
-            </nav> */
-}
