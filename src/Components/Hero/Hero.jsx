@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const Hero = () => {
    return (
       <div
-         className="hero h-200"
+         className="hero h-180"
          style={{
             backgroundImage:
                "url(https://images.pexels.com/photos/6754850/pexels-photo-6754850.jpeg)",

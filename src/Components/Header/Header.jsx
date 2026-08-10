@@ -8,7 +8,10 @@ const Header = () => {
             <NavLink to="/">Home</NavLink>
          </li>
          <li>
-            <NavLink to="/Services">Services</NavLink>
+            <NavLink to="/aboutus">About Us</NavLink>
+         </li>
+         <li>
+            <NavLink to="/services">Services</NavLink>
          </li>
          <li>
             <NavLink to="/contact">Contact</NavLink>
@@ -18,8 +21,8 @@ const Header = () => {
 
    return (
       <div className="bg-base-100 shadow-sm fixed w-full z-10">
-         <div className="m-auto w-7xl navbar ">
-            <div className="navbar-start">
+         <div className="m-auto w-7xl flex items-center justify-between py-2">
+            <div className="">
                <NavLink to="/" className="logo">
                   <img src={Logo} alt="logo" className="h-16" />
                </NavLink>
@@ -29,7 +32,7 @@ const Header = () => {
                   {menuItems}
                </ul>
             </nav>
-            <div className="navbar-end">
+            <div className="">
                <Link to="/signin">
                   <button className="btn  btn-primary hover:btn-accent mr-4">
                      Sign In

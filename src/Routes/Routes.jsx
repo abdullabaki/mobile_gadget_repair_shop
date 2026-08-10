@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
          },
          {
             index: true,
-            path: "/Services",
+            path: "/services",
             Component: Services,
          },
          {

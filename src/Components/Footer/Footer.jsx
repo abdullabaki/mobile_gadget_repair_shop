@@ -51,7 +51,7 @@ const Footer = () => {
          items_links: [
             "tel:123-456-7890",
             "mailto:info@repairshop.com",
-            "https://maps.google.com/?q=123+Repair+St,+City,+State+12345"
+            "https://maps.google.com/?q=123+Repair+St,+City,+State+12345",
          ],
          social_media: [
             {
@@ -98,7 +98,7 @@ const Footer = () => {
                                  key={index}
                                  href={column.items_links[index]}
                                  target="_blank"
-                                 className="flex items-center gap-2 hover:text-primary transition-colors duration-300"
+                                 className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
                               >
                                  {item}
                               </a>
@@ -112,7 +112,7 @@ const Footer = () => {
                                        ? "/"
                                        : `/${item.toLowerCase().replace(/\s+/g, "")}`
                                  }
-                                 className="flex items-center gap-2 hover:text-primary transition-colors duration-300 hover:text-bold"
+                                 className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
                               >
                                  {column.icons &&
                                     column.icons[index] &&
