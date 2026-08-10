@@ -3,105 +3,60 @@ import { Link } from "react-router";
 
 const Signup = () => {
    return (
-      <>
-         <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-            <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-               <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
-                  Sign in to your account
-               </h2>
+      <div className="pt-30">
+         <div className="h-180 w-7xl mx-auto rounded-xl shadow-xl/30 bg-[#EDEDED] grid grid-cols-2 gap-6 p-8">
+            <div className="flex items-center justify-center h-full w-full text-primary-content bg-primary rounded-2xl shadow-xl/30">
+               <div className="text-center w-80">
+                  <h3>Welcome Back</h3>
+                  <h2>Hello, Friend</h2>
+                  <p>
+                     Your trusted partner for mobile and laptop care. Log in to access your repair records, real-time updates, and service invoices instantly.
+                  </p>
+                  <Link to="/signin">
+                     <button>Sign In</button>
+                  </Link>
+               </div>
             </div>
-
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-               <form action="#" method="POST" className="space-y-6">
-                  <div>
-                     <label
-                        htmlFor="email"
-                        className="block text-sm/6 font-medium text-gray-900"
-                     >
+            <div>
+               <form action="">
+                  <h3>Welcome Back</h3>
+                  <fieldset className="fieldset">
+                     <label className="label" htmlFor="name">
                         Name
                      </label>
-                     <div className="mt-2">
-                        <input
-                           id="name"
-                           name="name"
-                           type="name"
-                           required
-                           autoComplete="name"
-                           className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
-                        />
-                     </div>
-                  </div>
-
-                  <div>
-                     <label
-                        htmlFor="email"
-                        className="block text-sm/6 font-medium text-gray-900"
-                     >
-                        Email address
+                     <input
+                        type="text"
+                        id="name"
+                        className="input"
+                        placeholder="Name"
+                     />
+                  </fieldset>
+                  <fieldset className="fieldset">
+                     <label className="label" htmlFor="name">
+                        Name
                      </label>
-                     <div className="mt-2">
-                        <input
-                           id="email"
-                           name="email"
-                           type="email"
-                           required
-                           autoComplete="email"
-                           className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
-                        />
-                     </div>
-                  </div>
-
-                  <div>
-                     <div className="flex items-center justify-between">
-                        <label
-                           htmlFor="password"
-                           className="block text-sm/6 font-medium text-gray-900"
-                        >
-                           Password
-                        </label>
-                        <div className="text-sm">
-                           <a
-                              href="#"
-                              className="font-semibold text-primary hover:text-indigo-500"
-                           >
-                              Forgot password?
-                           </a>
-                        </div>
-                     </div>
-                     <div className="mt-2">
-                        <input
-                           id="password"
-                           name="password"
-                           type="password"
-                           required
-                           autoComplete="current-password"
-                           className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
-                        />
-                     </div>
-                  </div>
-
-                  <div>
-                     <button
-                        type="submit"
-                        className="flex w-full justify-center rounded-md bg-primary px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                     >
-                        Sign in
-                     </button>
-                  </div>
+                     <input
+                        type="text"
+                        id="name"
+                        className="input"
+                        placeholder="Name"
+                     />
+                  </fieldset>
+                  <fieldset className="fieldset">
+                     <label className="label" htmlFor="name">
+                        Name
+                     </label>
+                     <input
+                        type="text"
+                        id="name"
+                        className="input"
+                        placeholder="Name"
+                     />
+                  </fieldset>
                </form>
-
-               <p className="mt-10 text-center text-sm/6 text-gray-500">
-                  You have a account?{" "}
-                  <Link
-                     to="/signin"
-                     className="font-semibold text-primary hover:text-indigo-500"
-                  >
-                     Go To Sign In?
-                  </Link>
-               </p>
             </div>
          </div>
-      </>
+      </div>
    );
 };
 

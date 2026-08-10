@@ -1,4 +1,3 @@
-import "react";
 import {
    FaFacebookMessenger,
    FaFacebookSquare,
@@ -96,31 +95,41 @@ const Footer = () => {
                            return (
                               <a
                                  key={index}
-                                 href={column.items_links[index]}
-                                 target="_blank"
+                                 href={column.items_links?.[index]}
                                  className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
                               >
                                  {item}
                               </a>
                            );
-                        } else {
+                        }
+
+                        if (column.title === "Services") {
                            return (
                               <Link
                                  key={index}
-                                 to={
-                                    item === "Home"
-                                       ? "/"
-                                       : `/${item.toLowerCase().replace(/\s+/g, "")}`
-                                 }
+                                 to="/services"
                                  className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
                               >
-                                 {column.icons &&
-                                    column.icons[index] &&
-                                    column.icons[index]}
+                                 {column.icons && column.icons[index]}
                                  {item}
                               </Link>
                            );
                         }
+
+                        return (
+                           <Link
+                              key={index}
+                              to={
+                                 item === "Home"
+                                    ? "/"
+                                    : `/${item.toLowerCase().replace(/\s+/g, "")}`
+                              }
+                              className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
+                           >
+                              {column.icons && column.icons[index]}
+                              {item}
+                           </Link>
+                        );
                      })}
                   </div>
                   {column.social_media && (
