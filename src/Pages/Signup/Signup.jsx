@@ -28,7 +28,7 @@ const Signup = () => {
                </div>
             </div>
             <div className="flex items-center justify-center h-full w-full">
-               <htmlForm action="" className="w-100 mx-auto">
+               <div className="w-100 mx-auto">
                   <div className="text-center pb-12">
                      <h3 className="font-bold text-2xl pb-1">Create Account</h3>
                      <p className="font-light text-xs">
@@ -86,7 +86,7 @@ const Signup = () => {
                         Google Sign Up
                      </button>
                   </div>
-               </htmlForm>
+               </div>
             </div>
          </div>
       </div>
