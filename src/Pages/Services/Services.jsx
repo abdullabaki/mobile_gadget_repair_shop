@@ -1,131 +1,25 @@
 import "react";
 import Footer from "../../Components/Footer/Footer";
-import PhoneImg from "../../assets/Images/phone_repair.png";
+import ServicesList from "./ServicesList/ServicesList";
 
 const Services = () => {
    return (
       <>
-         <div className="pt-30 pb-10">
-            <h2 className="text-4xl font-extrabold text-center mb-8 text-primary">
-               Our Services
-            </h2>
-            <div className="grid grid-flow-col grid-rows-2 gap-6 justify-center items-center m-auto">
-               <div className="card bg-base-100 w-80 shadow-sm">
-                  <figure>
-                     <img src={PhoneImg} alt="Phone Repair" className="w-fit" />
-                  </figure>
-                  <div className="card-body">
-                     <h2 className="card-title">
-                        Mobile Repair
-                        <div className="badge badge-secondary">NEW</div>
-                     </h2>
-                     <p>
-                        Register, book services, track jobs, chat with
-                        technicians, receive invoices...
-                     </p>
-                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Technicians</div>
-                        <div className="badge badge-outline">Details</div>
-                     </div>
-                  </div>
-               </div>
-               <div className="card bg-base-100 w-80 shadow-sm">
-                  <figure>
-                     <img src={PhoneImg} alt="Phone Repair" className="w-fit" />
-                  </figure>
-                  <div className="card-body">
-                     <h2 className="card-title">
-                        Laptop Repair
-                        <div className="badge badge-secondary">NEW</div>
-                     </h2>
-                     <p>
-                        Register, book services, track jobs, chat with
-                        technicians, receive invoices...
-                     </p>
-                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Technicians</div>
-                        <div className="badge badge-outline">Details</div>
-                     </div>
-                  </div>
-               </div>
-               <div className="card bg-base-100 w-80 shadow-sm">
-                  <figure>
-                     <img src={PhoneImg} alt="Phone Repair" className="w-fit" />
-                  </figure>
-                  <div className="card-body">
-                     <h2 className="card-title">
-                        Accessories Repair
-                        <div className="badge badge-secondary">NEW</div>
-                     </h2>
-                     <p>
-                        Register, book services, track jobs, chat with
-                        technicians, receive invoices...
-                     </p>
-                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Technicians</div>
-                        <div className="badge badge-outline">Details</div>
-                     </div>
-                  </div>
-               </div>
-               <div className="card bg-base-100 w-80 shadow-sm">
-                  <figure>
-                     <img src={PhoneImg} alt="Phone Repair" className="w-fit" />
-                  </figure>
-                  <div className="card-body">
-                     <h2 className="card-title">
-                        Battery Replacement
-                        <div className="badge badge-secondary">NEW</div>
-                     </h2>
-                     <p>
-                        Register, book services, track jobs, chat with
-                        technicians, receive invoices...
-                     </p>
-                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Technicians</div>
-                        <div className="badge badge-outline">Details</div>
-                     </div>
-                  </div>
-               </div>
-               <div className="card bg-base-100 w-80 shadow-sm">
-                  <figure>
-                     <img src={PhoneImg} alt="Phone Repair" className="w-fit" />
-                  </figure>
-                  <div className="card-body">
-                     <h2 className="card-title">
-                        Screen Replacement
-                        <div className="badge badge-secondary">NEW</div>
-                     </h2>
-                     <p>
-                        Register, book services, track jobs, chat with
-                        technicians, receive invoices...
-                     </p>
-                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Technicians</div>
-                        <div className="badge badge-outline">Details</div>
-                     </div>
-                  </div>
-               </div>
-               <div className="card bg-base-100 w-80 shadow-sm">
-                  <figure>
-                     <img src={PhoneImg} alt="Phone Repair" className="w-fit" />
-                  </figure>
-                  <div className="card-body">
-                     <h2 className="card-title">
-                        PC Repair
-                        <div className="badge badge-secondary">NEW</div>
-                     </h2>
-                     <p>
-                        Register, book services, track jobs, chat with
-                        technicians, receive invoices...
-                     </p>
-                     <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Technicians</div>
-                        <div className="badge badge-outline">Details</div>
-                     </div>
-                  </div>
+         <div className="pt-20">
+            <div
+               className="hero h-80"
+               style={{
+                  backgroundImage:
+                     "url(https://images.pexels.com/photos/10699355/pexels-photo-10699355.jpeg)",
+               }}
+            >
+               <div className="hero-overlay"></div>
+               <div className="hero-content text-neutral-content text-center h-full w-full flex justify-center align-middle">
+                  <h2 className="text-3xl font-bold uppercase">Our Services</h2>
                </div>
             </div>
          </div>
+         <ServicesList />
          <Footer />
       </>
    );
