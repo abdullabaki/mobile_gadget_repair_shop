@@ -7,11 +7,9 @@ const Signin = () => {
       <div className="pt-30">
          <div className="h-180 w-7xl mx-auto rounded-xl shadow-xl/30 border-2 border-[#EDEDED] grid grid-cols-2 gap-6 p-8">
             <div className="flex items-center justify-center h-full w-full">
-               <form action="" className="w-100 mx-auto">
+               <htmlForm action="" className="w-100 mx-auto">
                   <div className="text-center pb-12">
-                     <h3 className="font-bold text-2xl pb-1">
-                        Log In Account
-                     </h3>
+                     <h3 className="font-bold text-2xl pb-1">Log In Account</h3>
                      <p className="font-light text-xs">
                         Sign In and begin your experience
                      </p>
@@ -46,7 +44,7 @@ const Signin = () => {
                         Google Sign In
                      </button>
                   </div>
-               </form>
+               </htmlForm>
             </div>
             <div className="flex items-center justify-center h-full w-full text-primary-content rounded-2xl shadow-xl/30 bg-linear-to-b from-primary to-secondary">
                <div className="text-center w-80">
@@ -57,9 +55,9 @@ const Signin = () => {
                      Hello, Friend!
                   </h2>
                   <p className="text-xs font-light pb-1">
-                     Your trusted partner for mobile and laptop care. Log in to
-                     access your repair records, real-time updates, and service
-                     invoices instantly.
+                     Your trusted partner htmlFor mobile and laptop care. Log in
+                     to access your repair records, real-time updates, and
+                     service invoices instantly.
                   </p>
                   <p className="font-medium pb-3">New to GadgetCare ?</p>
                   <Link to="/signup">

@@ -15,9 +15,9 @@ const Signup = () => {
                      Hello, Friend!
                   </h2>
                   <p className="text-xs font-light pb-1">
-                     Your trusted partner for mobile and laptop care. Sign Up to
-                     access your repair records, real-time updates, and service
-                     invoices instantly.
+                     Your trusted partner htmlFor mobile and laptop care. Sign
+                     Up to access your repair records, real-time updates, and
+                     service invoices instantly.
                   </p>
                   <p className="font-medium pb-3">Already have account ?</p>
                   <Link to="/signin">
@@ -28,11 +28,9 @@ const Signup = () => {
                </div>
             </div>
             <div className="flex items-center justify-center h-full w-full">
-               <form action="" className="w-100 mx-auto">
+               <htmlForm action="" className="w-100 mx-auto">
                   <div className="text-center pb-12">
-                     <h3 className="font-bold text-2xl pb-1">
-                        Create Account
-                     </h3>
+                     <h3 className="font-bold text-2xl pb-1">Create Account</h3>
                      <p className="font-light text-xs">
                         Sign up and begin your experience
                      </p>
@@ -88,7 +86,7 @@ const Signup = () => {
                         Google Sign Up
                      </button>
                   </div>
-               </form>
+               </htmlForm>
             </div>
          </div>
       </div>

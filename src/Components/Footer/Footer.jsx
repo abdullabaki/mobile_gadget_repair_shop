@@ -80,7 +80,7 @@ const Footer = () => {
                <img src={FooterLogo} alt="Footer Logo" className="h-20" />
                <p className="w-87.5  text-[17px] leading-6 pt-1.5">
                   Your trusted mobile gadget & accessories repair booking
-                  platform. Book certified technicians, track repairs, and
+                  plathtmlForm. Book certified technicians, track repairs, and
                   receive instant invoices.
                </p>
             </aside>
