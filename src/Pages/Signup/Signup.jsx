@@ -15,7 +15,7 @@ const Signup = () => {
                      Hello, Friend!
                   </h2>
                   <p className="text-xs font-light pb-1">
-                     Your trusted partner for mobile and laptop care. Log in to
+                     Your trusted partner for mobile and laptop care. Sign Up to
                      access your repair records, real-time updates, and service
                      invoices instantly.
                   </p>

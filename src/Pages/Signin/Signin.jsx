@@ -63,7 +63,7 @@ const Signin = () => {
                   </p>
                   <p className="font-medium pb-3">New to GadgetCare ?</p>
                   <Link to="/signup">
-                     <button className="glass inline px-8 py-2 rounded-3xl font-medium">
+                     <button className="glass inline px-8 py-2 rounded-3xl font-medium hover:shadow-xl ease-out duration-300">
                         Sign Up
                      </button>
                   </Link>

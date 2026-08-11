@@ -18,7 +18,7 @@ const Footer = () => {
       {
          id: 1,
          title: "Quick Links",
-         items: ["Home", "About Us", "Services", "Contact"],
+         items: ["Home", "About Us", "Services", "Contact", "Dashboard"],
       },
       {
          id: 2,
