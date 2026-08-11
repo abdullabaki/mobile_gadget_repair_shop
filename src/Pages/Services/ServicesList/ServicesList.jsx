@@ -1,7 +1,9 @@
 import "react";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router";
 import ServicesCard from "./ServicesCard";
 
-const ServicesList = () => {
+const ServicesList = ({ limit }) => {
    return (
       <div className="pt-15 text-center w-7xl mx-auto">
          <div className="pb-10">
@@ -16,7 +18,19 @@ const ServicesList = () => {
                care.
             </p>
          </div>
-         <ServicesCard />
+         <ServicesCard limit={limit} />
+         {limit <= 4 && (
+            <div className="pb-8">
+               <h6 className="pb-4 pt-10">
+                  Need help with a different problem?
+               </h6>
+               <Link to="/services">
+                  <button className="btn btn-primary btn-outline rounded-xl py-2 px-6 duration-300 ease-in">
+                     View All Technicians <FaArrowRight />
+                  </button>
+               </Link>
+            </div>
+         )}
       </div>
    );
 };

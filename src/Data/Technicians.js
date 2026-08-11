@@ -1,0 +1,88 @@
+const technicians = [
+   {
+      id: crypto.randomUUID(),
+      img: "https://i.shgcdn.com/d72c7202-9d2a-406d-a764-ed8d8c4b312b/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      name: "Arif Hasan",
+      state: "Available",
+      position: "Mobile Repair Specialist",
+      experience: "4+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://img.magnific.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?semt=ais_test_b&w=740&q=80",
+      name: "Inam ul Haq",
+      state: "Available",
+      position: "Hardware & Software Expert",
+      experience: "5+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://thumbs.dreamstime.com/b/portrait-handsome-smiling-young-man-folded-arms-smiling-joyful-cheerful-men-crossed-hands-isolated-studio-shot-172869765.jpg",
+      name: "Ifran Ahmed",
+      state: "Unavailable",
+      position: "Laptop & Computer Expert",
+      experience: "3+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://cdn.pixabay.com/photo/2024/11/08/05/28/man-9182458_1280.jpg",
+      name: "Ibrahim Khan",
+      state: "Available",
+      position: "Apple & Android Specialist",
+      experience: "6+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErjq9pFrx5M2CqWO2Hl1j3ErC9EcDjLqx_cH7Wahgj6C9nS3QDEg5-xE&s=10",
+      name: "Ikram Hasan",
+      state: "Available",
+      position: "Laptop & Computer Expert",
+      experience: "4+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://thumbs.dreamstime.com/b/portrait-young-handsome-man-white-shirt-outdoor-portrait-young-handsome-man-white-shirt-outdoor-nice-appearance-131934608.jpg",
+      name: "Rahim Ahmed",
+      state: "Available",
+      position: "Hardware & Software Expert",
+      experience: "6+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_kDUIawmqShTd0MSNeoWx2fK4RNanDFDQmM_HHfJF-X1inNoTE0QI0eTW&s=10",
+      name: "Shakil Khan",
+      state: "Available",
+      position: "Mobile Repair Specialist",
+      experience: "4+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+   {
+      id: crypto.randomUUID(),
+      img: "https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJlYXV0aWZ1bCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      name: "Nayeem Hossain",
+      state: "Unavailable",
+      position: "Apple & Android Specialist",
+      experience: "5+ Years",
+      location: "Chattogram",
+      rating: 4.5,
+   },
+];
+
+function getAllTechnicians() {
+   return technicians;
+}
+
+export { getAllTechnicians };

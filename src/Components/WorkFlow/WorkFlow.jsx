@@ -26,9 +26,12 @@ const WorkFlow = () => {
 
    return (
       <div className="py-10 uppercase w-7xl mx-auto">
-         <h2 className="text-2xl font-medium text-primary text-center py-6">
+         <h2 className="text-center text-4xl font-bold pt-6 pb-3">
             How GadgetCare Works
          </h2>
+         <p className="text-sm text-accent-content text-center pb-12">
+            Get reliable repairs at the best price, delivered with care.
+         </p>
 
          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mx-6 lg:mx-0">
             {works.map((work, i) => (

@@ -21,3 +21,10 @@ body {
    outline: none;
    outline-offset: inherit;
 }
+
+.services_card img{
+   transition: transform 0.4s ease;
+}
+.services_card:hover img{
+   transform: scale(1.06);
+}
