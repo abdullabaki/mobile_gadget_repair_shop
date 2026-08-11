@@ -15,3 +15,9 @@ body {
       ) !important;
    }
 }
+.input:focus,
+.file-input:focus{
+   border: 2px solid #1c7bb1;
+   outline: none;
+   outline-offset: inherit;
+}
