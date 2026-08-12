@@ -34,7 +34,7 @@ const Header = () => {
             </nav>
             <div className="">
                <Link to="/signin">
-                  <button className="btn  btn-primary hover:btn-accent mr-4">
+                  <button className="btn  btn-primary hover:btn-accent hover:text-white mr-4">
                      Sign In
                   </button>
                </Link>
