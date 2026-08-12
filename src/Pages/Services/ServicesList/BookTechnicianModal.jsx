@@ -154,7 +154,7 @@ const BookTechnicianModal = forwardRef((props, ref) => {
                      </form>
                      <input
                         type="submit"
-                        value="View All Technicians →"
+                        value="Confirm Booking →"
                         className="btn btn-block btn-primary btn-outline rounded-xl py-2 duration-300 ease-in"
                      />
                   </div>
