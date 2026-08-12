@@ -1,6 +1,6 @@
 import "react";
 import { forwardRef, useImperativeHandle, useRef } from "react";
-import { FaArrowRight } from "react-icons/fa6";
+// import { FaArrowRight } from "react-icons/fa6";
 import { ImCancelCircle } from "react-icons/im";
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 
@@ -146,18 +146,19 @@ const BookTechnicianModal = forwardRef((props, ref) => {
                         required
                      ></textarea>
                   </div>
+                  <div className="col-span-2 grid grid-cols-2 gap-2">
+                     <form method="dialog">
+                        <button className="btn btn-block btn-error btn-outline rounded-xl py-2 duration-300 ease-in">
+                           Cancel <ImCancelCircle />
+                        </button>
+                     </form>
+                     <input
+                        type="submit"
+                        value="View All Technicians →"
+                        className="btn btn-block btn-primary btn-outline rounded-xl py-2 duration-300 ease-in"
+                     />
+                  </div>
                </fieldset>
-
-               <div className="modal-action grid grid-cols-2 gap-5">
-                  <form method="dialog">
-                     <button className="btn btn-block btn-error btn-outline rounded-xl py-2 duration-300 ease-in">
-                        Cancel <ImCancelCircle />
-                     </button>
-                  </form>
-                  <button className="btn btn-block btn-primary btn-outline rounded-xl py-2 duration-300 ease-in">
-                     View All Technicians <FaArrowRight />
-                  </button>
-               </div>
             </div>
          </dialog>
       </div>
