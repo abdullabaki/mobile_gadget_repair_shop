@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const UserDashboard = () => {
    return (
-      <div className="w-full p-7">
+      <div className="w-full p-7 overflow-scroll scrollbar-none [&::-webkit-scrollbar]:hidden">
          <div className="pb-8">
             <div className="text-xl font-bold pb-1">
                Wellcome Back, <span className="text-primary">MD Rafi</span>

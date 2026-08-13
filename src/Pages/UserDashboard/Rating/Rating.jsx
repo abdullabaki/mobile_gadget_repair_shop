@@ -2,7 +2,7 @@ import "react";
 
 const Rating = () => {
    return (
-      <div className="w-full p-7 h-9/10 flex justify-center items-center">
+      <div className="w-full p-7 h-9/10 flex justify-center items-center overflow-scroll scrollbar-none [&::-webkit-scrollbar]:hidden">
          <div className="bg-white rounded-md w-120 p-4">
             <div>
                <h1 className="text-center text-primary font-bold text-xl pb-4">

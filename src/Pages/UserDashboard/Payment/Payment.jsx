@@ -36,7 +36,7 @@ const Payment = () => {
    ];
 
    return (
-      <div className="w-full p-7 h-9/10 flex justify-center items-center">
+      <div className="w-full p-7 h-9/10 flex justify-center items-center overflow-scroll scrollbar-none [&::-webkit-scrollbar]:hidden">
          <section
             className="py-6 px-4 md:px-8 bg-primary-content rounded-md"
             aria-labelledby="payment-heading"

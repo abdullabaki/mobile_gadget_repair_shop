@@ -3,7 +3,7 @@ import { TbLiveView } from "react-icons/tb";
 
 const LiveTrack = () => {
    return (
-      <div className="w-full p-7">
+      <div className="w-full p-7 overflow-scroll scrollbar-none [&::-webkit-scrollbar]:hidden">
          <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto flex flex-wrap">
                <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">

@@ -2,7 +2,7 @@ import "react";
 
 const Invoices = () => {
    return (
-      <div className="w-full p-7">
+      <div className="w-full p-7 overflow-scroll scrollbar-none [&::-webkit-scrollbar]:hidden">
          <div className="bg-white border rounded-lg shadow-lg px-6 py-8 max-w-md mx-auto mt-8">
             <h1 className="font-bold text-2xl my-4 text-center text-primary">
                Gadget Care Services

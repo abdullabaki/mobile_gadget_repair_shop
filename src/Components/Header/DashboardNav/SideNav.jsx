@@ -76,7 +76,7 @@ const SideNav = () => {
    ];
 
    return (
-      <div className="side_nav bg-primary-content w-62.5 py-3 px-4">
+      <div className="side_nav bg-primary-content w-62.5 py-3 px-4 overflow-scroll scrollbar-none [&::-webkit-scrollbar]:hidden">
          <Link to="/">
             <img src={logo} alt="" className="h-20" />
          </Link>
