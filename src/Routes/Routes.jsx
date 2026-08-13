@@ -13,6 +13,7 @@ import Signup from "../Pages/Signup/Signup";
 import Invoices from "../Pages/UserDashboard/Invoices/Invoices";
 import LiveTrack from "../Pages/UserDashboard/LiveTrack/LiveTrack";
 import UserDashboard from "../Pages/UserDashboard/UserDashboard";
+import Payment from "../Pages/UserDashboard/Payment/Payment";
 
 export const router = createBrowserRouter([
    {
@@ -56,6 +57,7 @@ export const router = createBrowserRouter([
          { path: "user", Component: UserDashboard },
          { path: "track", Component: LiveTrack },
          { path: "invoices", Component: Invoices },
+         { path: "payment", Component: Payment },
       ],
    },
 ]);
