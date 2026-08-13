@@ -38,7 +38,7 @@ const ServicesCard = ({ limit }) => {
                         {technician.name}
                      </h2>
                      <h6 className="text-sm text-accent-content">
-                        {technician.position}
+                        {technician.designation}
                      </h6>
                      <div className="flex text-warning py-3 text-sm items-center">
                         <IoIosStar />
@@ -46,7 +46,9 @@ const ServicesCard = ({ limit }) => {
                         <IoIosStar />
                         <IoIosStar />
                         <IoIosStarHalf />
-                        <p className="font-semibold text-accent-content pl-1">{technician.rating}</p>
+                        <p className="font-semibold text-accent-content pl-1">
+                           {technician.rating}
+                        </p>
                      </div>
                      <div className="flex justify-between text-xs text-accent-content border-y border-[#eef2f7] py-3 mb-4">
                         <p>📍 {technician.location}</p>

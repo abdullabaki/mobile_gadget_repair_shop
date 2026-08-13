@@ -4,6 +4,7 @@ import { LiaFileInvoiceSolid } from "react-icons/lia";
 import {
    MdInfoOutline,
    MdOutlineLogout,
+   MdOutlineMessage,
    MdOutlineSettings,
    MdOutlineSpaceDashboard,
    MdOutlineStarRate,
@@ -22,6 +23,11 @@ const SideNav = () => {
                name: "Dashboard",
                url: "/dashboard/user",
                icone: <MdOutlineSpaceDashboard />,
+            },
+            {
+               name: "Messages",
+               url: "/dashboard/messages",
+               icone: <MdOutlineMessage />,
             },
             {
                name: "Payments",
