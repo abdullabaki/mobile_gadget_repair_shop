@@ -11,6 +11,7 @@ import Signin from "../Pages/Signin/Signin";
 import Signup from "../Pages/Signup/Signup";
 import Dashboard from "../Layout/Dashboard";
 import UserDashboard from "../Pages/UserDashboard/UserDashboard";
+import LiveTrack from "../Pages/UserDashboard/LiveTrack/LiveTrack";
 
 export const router = createBrowserRouter([
    {
@@ -52,6 +53,7 @@ export const router = createBrowserRouter([
       errorElement: <ErrorPage />,
       children: [
          { path: "user", Component: UserDashboard },
+         { path: "track", Component: LiveTrack },
       ],
    },
 ]);

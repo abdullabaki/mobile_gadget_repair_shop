@@ -33,7 +33,7 @@ const Contact = () => {
                         <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                            EMAIL
                         </h2>
-                        <a className="text-indigo-500 leading-relaxed">
+                        <a className="text-primary leading-relaxed">
                            example@email.com
                         </a>
                         <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
@@ -92,7 +92,7 @@ const Contact = () => {
                         className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                      ></textarea>
                   </div>
-                  <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  <button className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                      Button
                   </button>
                   <p className="text-xs text-gray-500 mt-3">

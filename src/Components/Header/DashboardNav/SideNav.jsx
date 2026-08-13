@@ -10,6 +10,7 @@ import {
    MdOutlineStarRate,
    MdPayment,
 } from "react-icons/md";
+import { TbLiveView } from "react-icons/tb";
 import { Link, NavLink } from "react-router";
 import logo from "../../../assets/Images/logo.png";
 
@@ -33,6 +34,11 @@ const SideNav = () => {
                name: "Payments",
                url: "/dashboard/payment",
                icone: <MdPayment />,
+            },
+            {
+               name: "Live Track",
+               url: "/dashboard/track",
+               icone: <TbLiveView />,
             },
             {
                name: "Invoices",

@@ -62,7 +62,7 @@ const Signup = () => {
                      className="select rounded-3xl input w-full inset-shadow-sm inset-shadow-neutral-content mb-5 py-2 px-5"
                   >
                      <option value="User">User</option>
-                     <option value="Technicians">Technicians</option>
+                     <option value="Technicians">Technician</option>
                   </select>
                   <input
                      type="password"
