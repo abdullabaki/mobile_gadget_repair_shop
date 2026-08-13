@@ -32,8 +32,8 @@ const Footer = () => {
          items: [
             { name: "Mobile Repair", icone: <FaMobileAlt /> },
             { name: "Laptop Repair", icone: <FaLaptop /> },
-            { name: "Battery Replacement", icone: <FaHeadphonesAlt /> },
-            { name: "Accessories", icone: <GiBattery50 /> },
+            { name: "Accessories", icone: <FaHeadphonesAlt /> },
+            { name: "Battery Replacement", icone: <GiBattery50 /> },
             { name: "Screen Replacement", icone: <MdMobileScreenShare /> },
          ],
       },

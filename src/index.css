@@ -5,6 +5,10 @@ body {
 .active {
    color: #1c7bb1;
 }
+.side_nav .active {
+   background-color: #1c7bb1;
+   color: white;
+}
 
 @layer daisyui.l1.l2.l3 {
    .hero-overlay {
