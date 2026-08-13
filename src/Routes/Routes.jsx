@@ -14,6 +14,7 @@ import Invoices from "../Pages/UserDashboard/Invoices/Invoices";
 import LiveTrack from "../Pages/UserDashboard/LiveTrack/LiveTrack";
 import UserDashboard from "../Pages/UserDashboard/UserDashboard";
 import Payment from "../Pages/UserDashboard/Payment/Payment";
+import Rating from "../Pages/UserDashboard/Rating/Rating";
 
 export const router = createBrowserRouter([
    {
@@ -58,6 +59,7 @@ export const router = createBrowserRouter([
          { path: "track", Component: LiveTrack },
          { path: "invoices", Component: Invoices },
          { path: "payment", Component: Payment },
+         { path: "review", Component: Rating },
       ],
    },
 ]);

@@ -61,7 +61,7 @@ const LiveTrack = () => {
                         <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                            Handover to technician
                         </h2>
-                        <p className="leading-relaxed">Assigned to delivery</p>
+                        <p className="leading-relaxed">-Assigned to delivery</p>
                      </div>
                   </div>
                </div>
@@ -80,7 +80,7 @@ const LiveTrack = () => {
                         <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                            Working
                         </h2>
-                        <p className="leading-relaxed">Work on it</p>
+                        <p className="leading-relaxed">-Work on it</p>
                      </div>
                   </div>
                </div>
