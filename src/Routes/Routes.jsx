@@ -1,6 +1,7 @@
 import "react";
 import { createBrowserRouter } from "react-router";
 import AuthLayout from "../Layout/AuthLayout";
+import Dashboard from "../Layout/Dashboard";
 import Root from "../Layout/Root";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/Contact/Contact";
@@ -9,9 +10,9 @@ import Home from "../Pages/Home/Home";
 import Services from "../Pages/Services/Services";
 import Signin from "../Pages/Signin/Signin";
 import Signup from "../Pages/Signup/Signup";
-import Dashboard from "../Layout/Dashboard";
-import UserDashboard from "../Pages/UserDashboard/UserDashboard";
+import Invoices from "../Pages/UserDashboard/Invoices/Invoices";
 import LiveTrack from "../Pages/UserDashboard/LiveTrack/LiveTrack";
+import UserDashboard from "../Pages/UserDashboard/UserDashboard";
 
 export const router = createBrowserRouter([
    {
@@ -54,6 +55,7 @@ export const router = createBrowserRouter([
       children: [
          { path: "user", Component: UserDashboard },
          { path: "track", Component: LiveTrack },
+         { path: "invoices", Component: Invoices },
       ],
    },
 ]);

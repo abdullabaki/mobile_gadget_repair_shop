@@ -49,7 +49,10 @@ const UserDashboard = () => {
                         </td>
                         <td>
                            <button>
-                              <Link className="btn btn-success">
+                              <Link
+                                 to="/dashboard/invoices"
+                                 className="btn btn-success"
+                              >
                                  Collect Invoice <LiaFileInvoiceSolid />
                               </Link>
                            </button>
@@ -73,7 +76,10 @@ const UserDashboard = () => {
                         </td>
                         <td>
                            <button>
-                              <Link className="btn btn-success">
+                              <Link
+                                 to="/dashboard/invoices"
+                                 className="btn btn-success"
+                              >
                                  Collect Invoice <LiaFileInvoiceSolid />
                               </Link>
                            </button>
