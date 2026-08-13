@@ -18,39 +18,44 @@ const Footer = () => {
       {
          id: 1,
          title: "Quick Links",
-         items: ["Home", "About Us", "Services", "Contact", "Dashboard"],
+         items: [
+            { name: "Home", url: "/" },
+            { name: "About Us", url: "/aboutus" },
+            { name: "Services", url: "/services" },
+            { name: "Contact", url: "/contact" },
+            { name: "Dashboard", url: "/dashboard/user" },
+         ],
       },
       {
          id: 2,
          title: "Services",
-         icons: [
-            <FaMobileAlt />,
-            <FaLaptop />,
-            <FaHeadphonesAlt />,
-            <GiBattery50 />,
-            <MdMobileScreenShare />,
-         ],
          items: [
-            "Mobile Repair",
-            "Laptop Repair",
-            "Accessories",
-            "Battery Replacement",
-            "Screen Replacement",
+            { name: "Mobile Repair", icone: <FaMobileAlt /> },
+            { name: "Laptop Repair", icone: <FaLaptop /> },
+            { name: "Battery Replacement", icone: <FaHeadphonesAlt /> },
+            { name: "Accessories", icone: <GiBattery50 /> },
+            { name: "Screen Replacement", icone: <MdMobileScreenShare /> },
          ],
       },
       {
          id: 3,
          title: "Contact Us",
-         icons: [<FaPhoneAlt />, <MdEmail />, <MdLocationOn />],
          items: [
-            "123-456-7890",
-            "info@repairshop.com",
-            "123 Repair St, City, State 12345",
-         ],
-         items_links: [
-            "tel:123-456-7890",
-            "mailto:info@repairshop.com",
-            "https://maps.google.com/?q=123+Repair+St,+City,+State+12345",
+            {
+               name: "123-456-7890",
+               icone: <FaPhoneAlt />,
+               url: "tel:123-456-7890",
+            },
+            {
+               name: "info@repairshop.com",
+               icone: <MdEmail />,
+               url: "mailto:info@repairshop.com",
+            },
+            {
+               name: "123 Repair St, City, State 12345",
+               icone: <MdLocationOn />,
+               url: "https://maps.google.com/?q=123+Repair+St,+City,+State+12345",
+            },
          ],
          social_media: [
             {
@@ -90,47 +95,15 @@ const Footer = () => {
                      {column.title}
                   </h6>
                   <div className="font-font-normal flex flex-col gap-3 text-[18px]">
-                     {column.items.map((item, index) => {
-                        if (column.title === "Contact Us") {
-                           return (
-                              <a
-                                 key={index}
-                                 href={column.items_links?.[index]}
-                                 className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
-                              >
-                                 {item}
-                              </a>
-                           );
-                        }
-
-                        if (column.title === "Services") {
-                           return (
-                              <Link
-                                 key={index}
-                                 to="/services"
-                                 className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
-                              >
-                                 {column.icons && column.icons[index]}
-                                 {item}
-                              </Link>
-                           );
-                        }
-
-                        return (
-                           <Link
-                              key={index}
-                              to={
-                                 item === "Home"
-                                    ? "/"
-                                    : `/${item.toLowerCase().replace(/\s+/g, "")}`
-                              }
-                              className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
-                           >
-                              {column.icons && column.icons[index]}
-                              {item}
-                           </Link>
-                        );
-                     })}
+                     {column.items.map((navfooter, index) => (
+                        <Link
+                           key={index}
+                           to={navfooter?.url}
+                           className="flex items-center gap-2 hover:text-primary transition-discrete duration-300"
+                        >
+                           {navfooter?.icone} {navfooter.name}
+                        </Link>
+                     ))}
                   </div>
                   {column.social_media && (
                      <div className="flex gap-4 mt-4">

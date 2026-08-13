@@ -1,5 +1,6 @@
 import "react";
 import { createBrowserRouter } from "react-router";
+import AuthLayout from "../Layout/AuthLayout";
 import Root from "../Layout/Root";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/Contact/Contact";
@@ -8,6 +9,8 @@ import Home from "../Pages/Home/Home";
 import Services from "../Pages/Services/Services";
 import Signin from "../Pages/Signin/Signin";
 import Signup from "../Pages/Signup/Signup";
+import Dashboard from "../Layout/Dashboard";
+import UserDashboard from "../Pages/UserDashboard/UserDashboard";
 
 export const router = createBrowserRouter([
    {
@@ -21,30 +24,34 @@ export const router = createBrowserRouter([
             Component: Home,
          },
          {
-            index: true,
-            path: "/services",
+            path: "services",
             Component: Services,
          },
          {
-            index: true,
-            path: "/aboutus",
+            path: "aboutus",
             Component: AboutUs,
          },
          {
-            index: true,
-            path: "/contact",
+            path: "contact",
             Component: Contact,
          },
-         {
-            index: true,
-            path: "/signup",
-            Component: Signup,
-         },
-         {
-            index: true,
-            path: "/signin",
-            Component: Signin,
-         },
+      ],
+   },
+   {
+      path: "auth",
+      Component: AuthLayout,
+      errorElement: <ErrorPage />,
+      children: [
+         { path: "signin", Component: Signin },
+         { path: "signup", Component: Signup },
+      ],
+   },
+   {
+      path: "dashboard",
+      Component: Dashboard,
+      errorElement: <ErrorPage />,
+      children: [
+         { path: "user", Component: UserDashboard },
       ],
    },
 ]);

@@ -1,5 +1,4 @@
 import "react";
-import Footer from "../../Components/Footer/Footer";
 import ServicesList from "./ServicesList/ServicesList";
 
 const Services = () => {
@@ -20,7 +19,6 @@ const Services = () => {
             </div>
          </div>
          <ServicesList />
-         <Footer />
       </>
    );
 };

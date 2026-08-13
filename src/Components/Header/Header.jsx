@@ -33,13 +33,13 @@ const Header = () => {
                </ul>
             </nav>
             <div className="">
-               <Link to="/signin">
+               <Link to="/auth/signin">
                   <button className="btn  btn-primary hover:btn-accent hover:text-white mr-4">
                      Sign In
                   </button>
                </Link>
 
-               <Link to="/signup">
+               <Link to="/auth/signup">
                   <button className="btn  btn-success">Sign Up</button>
                </Link>
             </div>

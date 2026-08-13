@@ -20,7 +20,7 @@ const Signup = () => {
                      service invoices instantly.
                   </p>
                   <p className="font-medium pb-3">Already have account ?</p>
-                  <Link to="/signin">
+                  <Link to="/auth/signin">
                      <button className="glass inline px-8 py-2 rounded-3xl font-medium hover:shadow-xl ease-out duration-300">
                         Sign In
                      </button>

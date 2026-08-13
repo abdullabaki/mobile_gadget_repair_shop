@@ -1,8 +1,8 @@
 import "react";
-import buy from "../../assets/Images/icons/best-price.png";
-import location from "../../assets/Images/icons/location.png";
-import technicians from "../../assets/Images/icons/observation.png";
-import payment from "../../assets/Images/icons/payment-method.png";
+import buy from "../../../assets/Images/icons/best-price.png";
+import location from "../../../assets/Images/icons/location.png";
+import technicians from "../../../assets/Images/icons/observation.png";
+import payment from "../../../assets/Images/icons/payment-method.png";
 
 const WorkFlow = () => {
    const works = [
